@@ -12,9 +12,9 @@ const Footer = () => {
 						fillOpacity={1}
 						d='M0,224L26.7,224C53.3,224,107,224,160,218.7C213.3,213,267,203,320,181.3C373.3,160,427,128,480,128C533.3,128,587,160,640,181.3C693.3,203,747,213,800,192C853.3,171,907,117,960,96C1013.3,75,1067,85,1120,128C1173.3,171,1227,245,1280,245.3C1333.3,245,1387,171,1413,133.3L1440,96L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z'></path>
 				</svg>
-				<section className='bg-lightGray247 h-72 flex'>
+				<section className='bg-lightGray247 h-max sm:h-72 flex'>
 					<div className='flex justify-center w-[105rem]'>
-						<div className='w-[70rem] flex justify-between'>
+						<div className='xl:w-[70rem] w-11/12 sm:pr-5 flex justify-between sm:flex-row flex-col gap-12 sm:pb-0 pb-12'>
 							<section>
 								<Link href='/' className='text-4xl font-extrabold cursor-pointer text-dark28'>
 									vvaciej
@@ -40,7 +40,7 @@ const Footer = () => {
 									</section>
 								</div>
 							</section>
-							<nav className='flex gap-40'>
+							<nav className='flex justify-between sm:flex-row flex-col gap-8 md:w-1/2'>
 								<section>
 									<h2 className='text-lg'>Produkt</h2>
 									<ul className='mt-4 text-commonText flex flex-col gap-2'>

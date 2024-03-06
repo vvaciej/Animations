@@ -12,7 +12,7 @@ const FAQ = () => {
 				<p className='text-center mt-7 text-lg text-commonText max-w-[40rem]'>
 					Gotowe odpowiedzi na Twoje pytania czekają, aby ułatwić Ci drogę do sukcesu biznesowego z aplikacją Stamply.
 				</p>
-				<div className='mt-12 h-full w-[88.5rem]'>
+				<div className='mt-12 h-full w-11/12 xl:w-[77rem]'>
 					<hr className='border-red border-[1px] w-full' />
 					<div className='mt-6 grid grid-cols-2 w-full h-full gap-6'>
 						<article className='p-4 px-5 bg-lightGray247 rounded-xl'>
