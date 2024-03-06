@@ -19,7 +19,7 @@ const config: Config = {
 				dark28: '#1C1C1C',
 				lightGray247: '#F7F7F7',
 				lightGray226: '#E2E2E2',
-				headerBg: 'rgba(255, 255, 255, 0.37)',
+				headerBg: 'rgba(255, 255, 255, 0.6)',
 			},
 			animation: {
 				wiggle: 'wiggle 1s ease-in-out infinite',

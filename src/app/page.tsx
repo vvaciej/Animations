@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
 	faArrowRight,
@@ -10,53 +9,16 @@ import {
 	faSmile,
 	faUniversalAccess,
 } from '@fortawesome/free-solid-svg-icons';
-import { faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
 import { useRef } from 'react';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 export default function Home() {
 	const virtualBenefitsRef = useRef<HTMLDivElement>(null);
 
 	return (
 		<div className='bg-white h-max w-full text-black flex justify-center relative'>
-			<div className='before:w-full before:content-[""] before:fixed before:h-[90px] before:backdrop-blur-xl before:z-10 before:top-0 before:left-0'></div>
-			<header className='fixed w-full z-10 flex justify-center before:content-[""] h-[90px] bg-headerBg'>
-				<div className='w-[90rem] h-full relative z-20'>
-					<div className='items-center flex justify-between h-full'>
-						<Link href='/' className='text-4xl font-extrabold cursor-pointer text-dark28'>
-							vvaciej
-						</Link>
-						<ul className='flex items-center gap-x-10 text-commonText'>
-							<li>
-								<Link href={'/'} className='cursor-pointer hover:text-red text-[18px]'>
-									Oferta
-								</Link>
-							</li>
-							<li>
-								<Link href={'/'} className='cursor-pointer hover:text-red text-[18px]'>
-									Funkcjonalność
-								</Link>
-							</li>
-							<li>
-								<Link href={'/'} className='cursor-pointer hover:text-red text-[18px]'>
-									Cennik
-								</Link>
-							</li>
-							<li>
-								<Link href={'/'} className='cursor-pointer hover:text-red text-[18px]'>
-									FAQ
-								</Link>
-							</li>
-						</ul>
-						<section className='flex items-center gap-x-4'>
-							<button className='flex items-center gap-x-2 outline outline-1 outline-lightGray226 px-4 py-2 rounded hover:bg-lightGray247'>
-								<img className='h-7' src='https://img.icons8.com/?size=256&id=17964&format=png' alt='poland flag' />
-								<span className='text-commonText'>PL</span>
-							</button>
-							<button className='py-4 px-8 text-center rounded-xl text-white font-semibold bg-red'>Wypróbuj</button>
-						</section>
-					</div>
-				</div>
-			</header>
+			<Navbar />
 			<div className='w-full relative z-[1] mt-24'>
 				<main className='w-full flex items-center flex-col'>
 					<div className='w-[90rem] flex flex-col items-center'>
@@ -298,7 +260,7 @@ export default function Home() {
 								</p>
 							</section>
 							<img
-								src='https://i.ibb.co/D8QDwpv/stylish-young-woman-enjoying-coffee.jpg'
+								src='https://i.ibb.co/ZffFmPZ/4059.jpg'
 								alt='stylish-young-woman-enjoying-coffee'
 								className='rounded-xl min-w-[30rem] max-w-[30rem] max-h-[20rem] min-h-[20rem] object-cover'
 							/>
@@ -309,7 +271,7 @@ export default function Home() {
 								gridTemplateColumns: '1fr 1.4fr',
 							}}>
 							<img
-								src='https://i.ibb.co/D8QDwpv/stylish-young-woman-enjoying-coffee.jpg'
+								src='https://i.ibb.co/z75QwP7/139512.jpg'
 								alt='stylish-young-woman-enjoying-coffee'
 								className='rounded-xl min-w-[30rem] max-w-[30rem] max-h-[20rem] min-h-[20rem] object-cover'
 							/>
@@ -325,93 +287,7 @@ export default function Home() {
 						</div>
 					</div>
 				</main>
-				<footer className='mt-32 w-full'>
-					<div className='w-full'>
-						<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320' className='w-full rotate-180'>
-							<path
-								fill='#F7F7F7'
-								fillOpacity={1}
-								d='M0,224L26.7,224C53.3,224,107,224,160,218.7C213.3,213,267,203,320,181.3C373.3,160,427,128,480,128C533.3,128,587,160,640,181.3C693.3,203,747,213,800,192C853.3,171,907,117,960,96C1013.3,75,1067,85,1120,128C1173.3,171,1227,245,1280,245.3C1333.3,245,1387,171,1413,133.3L1440,96L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z'></path>
-						</svg>
-						<section className='bg-lightGray247 h-72 flex'>
-							<div className='flex justify-center w-[105rem]'>
-								<div className='w-[70rem] flex justify-between'>
-									<section>
-										<Link href='/' className='text-4xl font-extrabold cursor-pointer text-dark28'>
-											vvaciej
-										</Link>
-										<h2 className='text-lg font-semibold text-dark28'>Collect. Reedem. Repeat.</h2>
-										<div className='mt-7'>
-											<span className='font-medium text-dark28'>Dołącz do nas</span>
-											<section className='flex gap-x-3 mt-2'>
-												<button
-													className='p-2 bg-white flex items-center justify-center rounded-3xl hover:bg-red transition-all'
-													style={{
-														boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px',
-													}}>
-													<FontAwesomeIcon className='h-6' icon={faTiktok} />
-												</button>
-												<button
-													className='p-2 flex items-center justify-center bg-white rounded-3xl hover:bg-red transition-all'
-													style={{
-														boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px',
-													}}>
-													<FontAwesomeIcon className='h-6' icon={faInstagram} />
-												</button>
-											</section>
-										</div>
-									</section>
-									<section className='flex gap-40'>
-										<section>
-											<h2 className='text-lg'>Produkt</h2>
-											<ul className='mt-4 text-commonText flex flex-col gap-2'>
-												<li className='hover:text-red'>
-													<Link href='/'>Produkt</Link>
-												</li>
-												<li className='hover:text-red'>
-													<Link href='/'>Cennik</Link>
-												</li>
-												<li className='hover:text-red'>
-													<Link href='/'>Funkcjonalność</Link>
-												</li>
-												<li className='hover:text-red'>
-													<Link href='/'>Pobierz aplikację</Link>
-												</li>
-											</ul>
-											<h2 className='text-commonText mt-10'>
-												Original website:{' '}
-												<a
-													href='https://www.stamply.pl'
-													target='_blank'
-													rel='noopener noreferrer'
-													className='text-red underline'>
-													Stamply
-												</a>
-											</h2>
-										</section>
-										<section>
-											<h2 className='text-lg'>Platforma</h2>
-											<ul className='mt-4 text-commonText flex flex-col gap-2'>
-												<li className='hover:text-red'>
-													<Link href='/'>O nas</Link>
-												</li>
-												<li className='hover:text-red'>
-													<Link href='/'>Kontakt</Link>
-												</li>
-												<li className='hover:text-red'>
-													<Link href='/'>Regulamin</Link>
-												</li>
-												<li className='hover:text-red'>
-													<Link href='/'>Polityka prywatności</Link>
-												</li>
-											</ul>
-										</section>
-									</section>
-								</div>
-							</div>
-						</section>
-					</div>
-				</footer>
+				<Footer />
 			</div>
 			<svg className='absolute h-screen opacity-20 z-[0]' xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'>
 				<defs>
