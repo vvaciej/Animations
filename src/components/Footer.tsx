@@ -45,16 +45,16 @@ const Footer = () => {
 									<h2 className='text-lg'>Produkt</h2>
 									<ul className='mt-4 text-commonText flex flex-col gap-2'>
 										<li className='hover:text-red'>
-											<Link href='/'>Produkt</Link>
+											<Link href='/product'>Produkt</Link>
 										</li>
 										<li className='hover:text-red'>
-											<Link href='/'>Cennik</Link>
+											<Link href='/pricing'>Cennik</Link>
 										</li>
 										<li className='hover:text-red'>
 											<Link href='/features'>Funkcjonalność</Link>
 										</li>
 										<li className='hover:text-red'>
-											<Link href='/'>Pobierz aplikację</Link>
+											<Link href='/app'>Pobierz aplikację</Link>
 										</li>
 									</ul>
 									<h2 className='text-commonText mt-10'>
@@ -72,16 +72,16 @@ const Footer = () => {
 									<h2 className='text-lg'>Platforma</h2>
 									<ul className='mt-4 text-commonText flex flex-col gap-2'>
 										<li className='hover:text-red'>
-											<Link href='/'>O nas</Link>
+											<Link href='/aboutus'>O nas</Link>
 										</li>
 										<li className='hover:text-red'>
-											<Link href='/'>Kontakt</Link>
+											<Link href='/contact'>Kontakt</Link>
 										</li>
 										<li className='hover:text-red'>
-											<Link href='/'>Regulamin</Link>
+											<Link href='/terms-and-conditions'>Regulamin</Link>
 										</li>
 										<li className='hover:text-red'>
-											<Link href='/'>Polityka prywatności</Link>
+											<Link href='/privacy-policy'>Polityka prywatności</Link>
 										</li>
 									</ul>
 								</section>
