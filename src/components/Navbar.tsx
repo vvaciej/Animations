@@ -22,7 +22,7 @@ const Navbar = () => {
 								</Link>
 							</li>
 							<li>
-								<Link href={'/'} className='cursor-pointer hover:text-red text-[18px]'>
+								<Link href={'/pricing'} className='cursor-pointer hover:text-red text-[18px]'>
 									Cennik
 								</Link>
 							</li>

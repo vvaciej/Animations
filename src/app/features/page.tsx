@@ -14,11 +14,11 @@ const Features = () => {
 					Odkryj, jak możesz skutecznie wzmacniać relacje z klientami, zwiększać sprzedaż i wyróżniać się na rynku
 					dzięki aplikacji Stamply.
 				</p>
-				<div className='mt-12 relative max-w-[65rem] py-6'>
+				<div className='mt-12 relative max-w-[65rem] pt-6'>
 					<div className='after:h-full after:absolute after:w-1 after:bg-red after:right-1/2 after:transform-x-1/2 flex flex-col w-full h-full gap-x-28 gap-y-6'>
 						<div></div>
 						<div className='w-full relative right-0 mb-12'>
-							<div className='h-12 flex items-center justify-center w-12 outline outline-[3px] outline-red rounded-[50%] absolute right-1/2 translate-x-1/2 z-10 bg-white top-16'>
+							<div className='h-12 flex items-center justify-center w-12 outline outline-[3px] outline-red rounded-[50%] absolute right-1/2 translate-x-1/2 z-[5] bg-white top-16'>
 								<FontAwesomeIcon className='h-7 text-red' icon={faRocket}></FontAwesomeIcon>
 							</div>
 							<section className='w-1/2 float-right pl-16'>
@@ -30,7 +30,7 @@ const Features = () => {
 							</section>
 						</div>
 						<div className='w-full relative mb-12'>
-							<div className='h-12 flex items-center justify-center w-12 outline outline-[3px] outline-red rounded-[50%] absolute right-1/2 translate-x-1/2 z-10 bg-white top-16'>
+							<div className='h-12 flex items-center justify-center w-12 outline outline-[3px] outline-red rounded-[50%] absolute right-1/2 translate-x-1/2 z-[5] bg-white top-16'>
 								<FontAwesomeIcon className='h-7 text-red' icon={faQrcode}></FontAwesomeIcon>
 							</div>
 							<section className='text-right w-1/2 pr-16'>
@@ -43,7 +43,7 @@ const Features = () => {
 						</div>
 						<div></div>
 						<div className='w-full relative mb-12'>
-							<div className='h-12 flex items-center justify-center w-12 outline outline-[3px] outline-red rounded-[50%] absolute right-1/2 translate-x-1/2 z-10 bg-white top-16'>
+							<div className='h-12 flex items-center justify-center w-12 outline outline-[3px] outline-red rounded-[50%] absolute right-1/2 translate-x-1/2 z-[5] bg-white top-16'>
 								<FontAwesomeIcon className='h-6 text-red' icon={faUserPlus}></FontAwesomeIcon>
 							</div>
 							<section className='text-left w-1/2 pl-16 float-right'>
@@ -56,7 +56,7 @@ const Features = () => {
 						</div>
 						<div></div>
 						<div className='w-full relative mb-12'>
-							<div className='h-12 flex items-center justify-center w-12 outline outline-[3px] outline-red rounded-[50%] absolute right-1/2 translate-x-1/2 z-10 bg-white top-16'>
+							<div className='h-12 flex items-center justify-center w-12 outline outline-[3px] outline-red rounded-[50%] absolute right-1/2 translate-x-1/2 z-[5] bg-white top-16'>
 								<FontAwesomeIcon className='h-6 text-red' icon={faMedal}></FontAwesomeIcon>
 							</div>
 							<section className='text-right w-1/2 pr-16 float-left'>
@@ -68,8 +68,8 @@ const Features = () => {
 							</section>
 						</div>
 						<div></div>
-						<div className='w-full relative mb-12'>
-							<div className='h-12 flex items-center justify-center w-12 outline outline-[3px] outline-red rounded-[50%] absolute right-1/2 translate-x-1/2 z-10 bg-white top-16'>
+						<div className='w-full relative mb-2'>
+							<div className='h-12 flex items-center justify-center w-12 outline outline-[3px] outline-red rounded-[50%] absolute right-1/2 translate-x-1/2 z-[5] bg-white top-16'>
 								<FontAwesomeIcon className='h-6 text-red' icon={faArrowUp}></FontAwesomeIcon>
 							</div>
 							<section className='text-left w-1/2 pl-16 float-right'>
