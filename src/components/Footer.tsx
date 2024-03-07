@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
+import getCookie from "../helpers/GetCookie";
 
 const Footer = () => {
   return (
@@ -16,7 +17,9 @@ const Footer = () => {
 					<div className='flex justify-center w-[105rem]'>
 						<div className='xl:w-[70rem] w-11/12 sm:pr-5 flex justify-between sm:flex-row flex-col gap-12 sm:pb-0 pb-8 sm:pt-0 pt-6'>
 							<section>
-								<Link href='/' className='text-4xl font-extrabold cursor-pointer text-dark28'>
+								<Link
+									href={`/${getCookie('langChoosed') === 'english' ? 'en' : 'pl'}`}
+									className='text-4xl font-extrabold cursor-pointer text-dark28'>
 									vvaciej
 								</Link>
 								<h2 className='text-lg font-semibold text-dark28'>Collect. Reedem. Repeat.</h2>
@@ -45,16 +48,20 @@ const Footer = () => {
 									<h2 className='text-lg'>Produkt</h2>
 									<ul className='mt-4 text-commonText flex flex-col gap-2'>
 										<li className='hover:text-red'>
-											<Link href='/product'>Produkt</Link>
+											<Link href={`/${getCookie('langChoosed') === 'english' ? 'en' : 'pl'}`}>Produkt</Link>
 										</li>
 										<li className='hover:text-red'>
-											<Link href='/pricing'>Cennik</Link>
+											<Link href={`/${getCookie('langChoosed') === 'english' ? 'en' : 'pl'}/pricing`}>Cennik</Link>
 										</li>
 										<li className='hover:text-red'>
-											<Link href='/features'>Funkcjonalność</Link>
+											<Link href={`/${getCookie('langChoosed') === 'english' ? 'en' : 'pl'}/features`}>
+												Funkcjonalność
+											</Link>
 										</li>
 										<li className='hover:text-red'>
-											<Link href='/app'>Pobierz aplikację</Link>
+											<Link href={`/${getCookie('langChoosed') === 'english' ? 'en' : 'pl'}/app`}>
+												Pobierz aplikację
+											</Link>
 										</li>
 									</ul>
 									<h2 className='text-commonText sm:mt-10 mt-2'>
@@ -72,16 +79,20 @@ const Footer = () => {
 									<h2 className='text-lg'>Platforma</h2>
 									<ul className='mt-4 text-commonText flex flex-col gap-2'>
 										<li className='hover:text-red'>
-											<Link href='/aboutus'>O nas</Link>
+											<Link href={`/${getCookie('langChoosed') === 'english' ? 'en' : 'pl'}/aboutus`}>O nas</Link>
 										</li>
 										<li className='hover:text-red'>
-											<Link href='/contact'>Kontakt</Link>
+											<Link href={`/${getCookie('langChoosed') === 'english' ? 'en' : 'pl'}/contact`}>Kontakt</Link>
 										</li>
 										<li className='hover:text-red'>
-											<Link href='/terms-and-conditions'>Regulamin</Link>
+											<Link href={`/${getCookie('langChoosed') === 'english' ? 'en' : 'pl'}/terms-and-conditions`}>
+												Regulamin
+											</Link>
 										</li>
 										<li className='hover:text-red'>
-											<Link href='/privacy-policy'>Polityka prywatności</Link>
+											<Link href={`/${getCookie('langChoosed') === 'english' ? 'en' : 'pl'}/privacy-policy`}>
+												Polityka prywatności
+											</Link>
 										</li>
 									</ul>
 								</section>
