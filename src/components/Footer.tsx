@@ -14,7 +14,7 @@ const Footer = () => {
 				</svg>
 				<section className='bg-lightGray247 h-max sm:h-72 flex'>
 					<div className='flex justify-center w-[105rem]'>
-						<div className='xl:w-[70rem] w-11/12 sm:pr-5 flex justify-between sm:flex-row flex-col gap-12 sm:pb-0 pb-12'>
+						<div className='xl:w-[70rem] w-11/12 sm:pr-5 flex justify-between sm:flex-row flex-col gap-12 sm:pb-0 py-12'>
 							<section>
 								<Link href='/' className='text-4xl font-extrabold cursor-pointer text-dark28'>
 									vvaciej
