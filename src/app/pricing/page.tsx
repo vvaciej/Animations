@@ -18,11 +18,11 @@ const Pricing = () => {
 				</p>
 				<div className='mt-12 flex flex-col items-center gap-8 mx-3 sm:mx-10'>
 					<article
-						className='p-2 sm:pb-4 sm:px-4 px-3 mb:pl-10 gap-x-12 max-w-[84rem] outline outline-[1px] outline-red rounded-3xl lg:grid flex flex-col'
+						className='p-2 sm:pb-4 lg:pl-6 px-3 mb:pl-10 gap-x-12 max-w-[84rem] outline outline-[1px] outline-red rounded-3xl lg:grid flex flex-col'
 						style={{
 							gridTemplateColumns: '2fr 1fr',
 						}}>
-						<section className='py-7 px-2 md:px-0'>
+						<section className='py-7 px-2 lg:px-0'>
 							<h2 className='text-red font-semibold text-2xl'>Pakiet standard</h2>
 							<p className='mt-5 text-commonText'>
 								Odkryj potencjał naszego podstawowego pakietu, stworzonego z myślą o małych biznesach. Zbieraj punkty,
@@ -61,11 +61,11 @@ const Pricing = () => {
 						</div>
 					</article>
 					<article
-						className='p-2 sm:pb-4 sm:px-4 px-3 mb:pl-10 gap-x-12 max-w-[84rem] outline outline-[1px] outline-dark28 rounded-3xl lg:grid flex flex-col'
+						className='p-2 sm:pb-4 lg:pl-6 mb:pl-10 gap-x-12 max-w-[84rem] outline outline-[1px] outline-dark28 rounded-3xl lg:grid flex flex-col'
 						style={{
 							gridTemplateColumns: '2fr 1fr',
 						}}>
-						<section className='py-7 px-2 md:px-0'>
+						<section className='py-7 px-2 lg:px-0'>
 							<h2 className='text-dark28 font-semibold text-2xl'>Pakiet Premium</h2>
 							<p className='mt-5 text-commonText'>
 								Odkryj pełen potencjał naszego pakietu Premium, dostosowanego do potrzeb rozwijających się biznesów.

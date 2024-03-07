@@ -10,11 +10,11 @@ const Navbar = () => {
 
 	return (
 		<>
-			<div className='before:w-full before:content-[""] before:fixed before:h-[90px] before:backdrop-blur-xl before:z-10 before:top-0 before:left-0'></div>
-			<header className='fixed w-full z-10 flex justify-center before:content-[""] h-[90px] bg-headerBg'>
+			<div className='before:w-full before:content-[""] before:fixed before:h-[70px] lg:before:h-[90px] before:backdrop-blur-xl before:z-10 before:top-0 before:left-0'></div>
+			<header className='fixed w-full z-10 flex justify-center before:content-[""] h-[70px] lg:h-[90px] bg-headerBg'>
 				<div className='xl:w-[77rem] w-11/12 h-full relative z-20'>
 					<nav className='items-center flex justify-between h-full'>
-						<Link href='/' className='text-4xl font-extrabold cursor-pointer text-dark28'>
+						<Link href='/' className='sm:text-4xl text-3xl font-extrabold cursor-pointer text-dark28'>
 							vvaciej
 						</Link>
 						<ul className='lg:flex hidden items-center gap-x-10 text-commonText'>
