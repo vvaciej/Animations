@@ -58,7 +58,7 @@ const Navbar = () => {
 				className={`fixed inset-0 h-full w-full bg-white z-20 lg:hidden flex items-center flex-col px-4 py-12 justify-between ${
 					isMenuDropdownActive ? 'flex' : 'hidden'
 				}`}>
-				<button className='p-2 absolute right-10 top-6' onClick={() => setMenuDropdownActive(false)}>
+				<button className='p-2 absolute right-6 top-5' onClick={() => setMenuDropdownActive(false)}>
 					<FontAwesomeIcon className='h-5 text-dark28' icon={faX} />
 				</button>
 				<section className='w-full text-center'>
@@ -69,7 +69,8 @@ const Navbar = () => {
 					</button>
 				</section>
 				<section className='w-full flex flex-col gap-y-4'>
-					<Link onClick={() => setMenuDropdownActive(false)}
+					<Link
+						onClick={() => setMenuDropdownActive(false)}
 						href={'/'}
 						className='flex items-center justify-between gap-x-2 outline outline-1 outline-lightGray226 w-full px-6 py-3 pr-8 rounded-xl hover:bg-lightGray247'>
 						<span className='text-xl text-dark28'>Oferta</span>

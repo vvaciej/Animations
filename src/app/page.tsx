@@ -78,7 +78,7 @@ export default function Home() {
 								</section>
 							</div>
 						</div>
-						<div className='h-screen flex sm:flex-row flex-col items-center justify-center w-full xl:w-[70rem] gap-16 xl:gap-32'>
+						<div className='sm:h-screen sm:py-0 py-16 mt-4 flex sm:flex-row flex-col items-center justify-center w-full xl:w-[70rem] gap-16 xl:gap-32'>
 							<img
 								src='https://stamply.pl/_next/image/?url=%2Fimages%2Fcharacters%2Fastronaut.webp&w=640&q=75'
 								className='xl:h-[28rem] sm:w-1/3 w-1/2'
@@ -97,7 +97,7 @@ export default function Home() {
 								</button>
 							</section>
 						</div>
-						<div className='h-screen flex sm:flex-row flex-col-reverse items-center justify-center w-full xl:w-[70rem] gap-16 xl:gap-32'>
+						<div className='sm:h-screen sm:py-0 py-16 flex sm:flex-row flex-col-reverse items-center justify-center w-full xl:w-[70rem] gap-16 xl:gap-32'>
 							<section className='flex flex-col gap-y-4'>
 								<h1 className='xl:text-6xl text-4xl text-dark28 font-semibold xl:leading-[3.4rem]'>
 									Lojalność w Twoim telefonie
@@ -117,7 +117,7 @@ export default function Home() {
 								alt=''
 							/>
 						</div>
-						<div className='h-screen flex sm:flex-row flex-col  items-center justify-center w-full xl:w-[70rem] gap-16 xl:gap-32'>
+						<div className='sm:h-screen mb-20 sm:py-0 py-16 flex sm:flex-row flex-col  items-center justify-center w-full xl:w-[70rem] gap-16 xl:gap-32'>
 							<img
 								src='https://stamply.pl/_next/image/?url=%2Fimages%2Fcharacters%2Fhappy-coffee.webp&w=640&q=75'
 								className='xl:h-[28rem] sm:w-1/3 w-1/2'
@@ -141,7 +141,7 @@ export default function Home() {
 							<h1 className='text-center text-4xl xl:text-6xl font-semibold text-dark28'>
 								Jakie korzyści przynosi aplikacja lojalnościowa Stamply?
 							</h1>
-							<div className='lg:grid flex flex-col grid-cols-2 items-center gap-8 w-full mt-24'>
+							<div className='lg:grid flex flex-col grid-cols-2 items-center gap-8 w-full mt-12 md:mt-20'>
 								<section className='w-full xl:h-72 h-full flex flex-col gap-y-3 p-8 xl:p-12 bg-dark28 rounded-lg'>
 									<h1 className='xl:text-2xl text-xl text-white font-bold'>Pozyskaj klientów i zwiększ sprzedaż</h1>
 									<p className='xl:text-xl text-lg text-lightGray247'>
@@ -190,7 +190,7 @@ export default function Home() {
 							<span className='text-center text-md xl:text-lg text-white mt-3 xl:mt-6'>
 								Obejrzyj ten krótki film, aby zobaczyć, jak działa aplikacja Stamply
 							</span>
-							<div className=' sm:w-[620px] sm:h-full h-3/5 w-11/12 sm:mt-10 mt-6'>
+							<div className='sm:w-[620px] sm:h-full h-3/5 w-11/12 sm:mt-10 mt-6'>
 								<iframe
 									className='rounded-lg h-full w-full'
 									src='https://www.youtube.com/embed/ZQeo_HMpjdg?hl=pl'
@@ -207,7 +207,7 @@ export default function Home() {
 					<div className='mt-16 w-11/12 xl:w-[80rem]'>
 						<h1 className='xl:text-6xl text-4xl font-semibold text-dark28 text-center'>Dla kogo jest ta aplikacja?</h1>
 						<div
-							className='lg:grid flex flex-col-reverse items-center gap-x-20 gap-y-10 justify-between w-full mt-24'
+							className='lg:grid flex flex-col-reverse items-center gap-x-20 gap-y-10 justify-between w-full mt-10 sm:mt-20'
 							style={{
 								gridTemplateColumns: '1.4fr 1fr',
 							}}>
