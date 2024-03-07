@@ -5,15 +5,19 @@ const NotFound = () => {
 	return (
 		<div>
 			<Navbar />
-			<main className='min-h-screen w-full flex justify-center'>
-				<div className='flex justify-between items-center w-9/12 h-screen'>
-					<section>
-						<h1 className='text-8xl text-dark28 mb-6'>
-							Błąd <b className='text-8xl text-red font-semibold'>404</b>.
+			<main className='md:min-h-screen h-max w-full flex justify-center'>
+				<div className='flex md:justify-between gap-y-12 items-center xl:w-9/12 w-11/12 md:flex-row flex-col md:mt-0 mt-32 md:h-screen'>
+					<section className='text-center'>
+						<h1 className='xl:text-8xl sm:text-6xl text-5xl text-dark28 md:mb-6 mb-3'>
+							Błąd <b className='xl:text-8xl sm:text-6xl text-5xl text-red font-semibold'>404</b>.
 						</h1>
-						<span className='text-2xl text-dark28'>Strona nie znaleziona</span>
+						<span className='md:text-2xl text-xl text-dark28'>Strona nie znaleziona</span>
 					</section>
-					<img className='h-[40rem]' src='https://stamply.pl/_next/image/?url=%2Fimages%2Fcharacters%2Ftoilet-coffee.png&w=640&q=75' alt='' />
+					<img
+						className='lg:h-[40rem] sm:h-[30rem] h-[25rem] w-max object-cover'
+						src='https://stamply.pl/_next/image/?url=%2Fimages%2Fcharacters%2Ftoilet-coffee.png&w=640&q=75'
+						alt=''
+					/>
 				</div>
 			</main>
 			<Footer />
