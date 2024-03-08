@@ -2,4 +2,10 @@
 * {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
+}
+
+html.light {
+  --cc-btn-primary-bg: #e81948 !important;
+  --cc-secondary-color: #929292 !important;
+  --cc-separator-border-color: #E2E2E2 !important;
 }/*# sourceMappingURL=global.css.map */
