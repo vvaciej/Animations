@@ -1,165 +1,172 @@
+'use client';
+
 import Footer from '@/src/components/Footer';
 import Navbar from '@/src/components/Navbar';
 import { faCircleQuestion } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useTranslation } from 'react-i18next';
 
 const FAQ = () => {
+	const { t } = useTranslation();
+
 	return (
 		<div>
 			<Navbar />
 			<main className='min-h-screen pt-32 flex items-center flex-col'>
 				<h1 className='md:text-6xl text-5xl font-semibold text-dark28 text-center'>FAQ</h1>
 				<p className='text-center mt-7 text-md md:text-lg text-commonText max-w-[40rem] px-4'>
-					Gotowe odpowiedzi na Twoje pytania czekają, aby ułatwić Ci drogę do sukcesu biznesowego z aplikacją Stamply.
+					{t(
+						'Ready answers to your questions are waiting to help you on the road to business success with the Stamply app.'
+					)}
 				</p>
 				<div className='mt-12 h-full w-11/12 xl:w-[77rem]'>
 					<hr className='border-red border-[1px] w-full' />
 					<div className='mt-6 grid lg:grid-cols-2 w-full h-full gap-6'>
 						<article className='p-4 px-5 bg-lightGray247 rounded-xl'>
 							<header className='flex justify-between items-center gap-x-2'>
-								<h1 className='lg:text-xl text-lg text-dark28 font-semibold'>Co to jest program lojalnościowy</h1>
+								<h1 className='lg:text-xl text-lg text-dark28 font-semibold'>{t('What is a loyalty program?')}</h1>
 								<FontAwesomeIcon className='h-5 text-dark28' icon={faCircleQuestion} />
 							</header>
 							<main>
 								<p className='mt-4 text-commonText text-md md:text-lg'>
-									Program lojalnościowy to strategia marketingowa, która nagradza stałych klientów za ich lojalność
-									wobec marki. W naszym przypadku, to zbieranie pieczątek za zakupy, co wpływa korzystnie na
-									doświadczenie zakupowe.
+									{t(
+										'A loyalty program is a marketing strategy that rewards loyal customers for their loyalty to the brand. In our case, it involves collecting stamps for purchases, positively impacting the shopping experience.'
+									)}
 								</p>
 							</main>
 						</article>
 						<article className='p-4 px-5 bg-lightGray247 rounded-xl'>
 							<header className='flex justify-between items-center gap-x-2'>
 								<h1 className='lg:text-xl text-lg text-dark28 font-semibold'>
-									Dlaczego warto mieć program lojalnościowy w swojej firmie?
+									{t('Why is it worth having a loyalty program in my business?')}
 								</h1>
 								<FontAwesomeIcon className='h-5 text-dark28' icon={faCircleQuestion} />
 							</header>
 							<main>
 								<p className='mt-4 text-commonText text-md md:text-lg'>
-									Program lojalnościowy pomaga zwiększyć zaangażowanie klientów, budować trwałe relacje i zwiększać
-									sprzedaż. Klienci oczekują nagród, a program lojalnościowy jest kluczowym narzędziem do pozyskania i
-									utrzymania klientów.
+									{t(
+										'A loyalty program helps increase customer engagement, build lasting relationships, and boost sales. Customers expect rewards, and a loyalty program is a key tool for acquiring and retaining customers.'
+									)}
 								</p>
 							</main>
 						</article>
 						<article className='p-4 px-5 bg-lightGray247 rounded-xl'>
 							<header className='flex justify-between items-center gap-x-2'>
 								<h1 className='lg:text-xl text-lg text-dark28 font-semibold'>
-									Jakie są oczekiwania klientów wobec programu lojalnościowego?
+									{t("What are customers' expectations from a loyalty program?")}
 								</h1>
 								<FontAwesomeIcon className='h-5 text-dark28' icon={faCircleQuestion} />
 							</header>
 							<main>
 								<p className='mt-4 text-commonText text-md md:text-lg'>
-									Klienci oczekują atrakcyjnych nagród, prostego systemu zbierania punktów, oraz korzyści dostępnych
-									tylko dla uczestników programu. Dodatkowo, oczekują szybkich i klarownych informacji na temat swojego
-									konta i dostępnych nagród.
+									{t(
+										'Customers expect attractive rewards, a simple points collection system, and benefits available only to program participants. Additionally, they expect quick and clear information about their account and available rewards.'
+									)}
 								</p>
 							</main>
 						</article>
 						<article className='p-4 px-5 bg-lightGray247 rounded-xl'>
 							<header className='flex justify-between items-center gap-x-2'>
 								<h1 className='lg:text-xl text-lg text-dark28 font-semibold'>
-									Jakie są zalety mobilnej aplikacji lojalnościowej?
+									{t('How does a mobile loyalty app benefit businesses?')}
 								</h1>
 								<FontAwesomeIcon className='h-5 text-dark28' icon={faCircleQuestion} />
 							</header>
 							<main>
 								<p className='mt-4 text-commonText text-md md:text-lg'>
-									Aplikacja mobilna to wygoda dla klientów! Umożliwia im zbieranie punktów i korzystanie z nagród
-									bezpośrednio za pomocą telefonu. To również efektywny sposób na utrzymanie interakcji z klientami,
-									informując ich o nowościach i promocjach poprzez powiadomienia push.
+									{t(
+										'A mobile app is convenient for customers! It allows them to collect points and redeem rewards directly through their phones. It is also an effective way to maintain interactions with customers, informing them about news and promotions through push notifications.'
+									)}
 								</p>
 							</main>
 						</article>
 						<article className='p-4 px-5 bg-lightGray247 rounded-xl'>
 							<header className='flex justify-between items-center gap-x-2'>
 								<h1 className='lg:text-xl text-lg text-dark28 font-semibold'>
-									Jak działa aplikacja do zbierania pieczątek?
+									{t('How does the stamp collection app work?')}
 								</h1>
 								<FontAwesomeIcon className='h-5 text-dark28' icon={faCircleQuestion} />
 							</header>
 							<main>
 								<p className='mt-4 text-commonText text-md md:text-lg'>
-									Aplikacja umożliwia klientom zbieranie pieczątek za każdy zakup. Po osiągnięciu określonej liczby
-									pieczątek, klient otrzymuje dostęp do określonych nagród. Aplikacja jest intuicyjna i łatwa w użyciu,
-									co przekłada się na zwiększenie lojalności klientów.
+									{t(
+										'The app enables customers to collect stamps for every purchase. Upon reaching a specified number of stamps, the customer gains access to certain rewards. The app is intuitive and easy to use, translating into increased customer loyalty.'
+									)}
 								</p>
 							</main>
 						</article>
 						<article className='p-4 px-5 bg-lightGray247 rounded-xl'>
 							<header className='flex justify-between items-center gap-x-2'>
 								<h1 className='lg:text-xl text-lg text-dark28 font-semibold'>
-									Czy mogę dostosować program lojalnościowy do specyfiki mojego biznesu?
+									{t("Can I customize the loyalty program for my business's specifics?")}
 								</h1>
 								<FontAwesomeIcon className='h-5 text-dark28' icon={faCircleQuestion} />
 							</header>
 							<main>
 								<p className='mt-4 text-commonText text-md md:text-lg'>
-									Tak, nasza platforma umożliwia dostosowanie programu lojalnościowego do unikalnych potrzeb Twojego
-									biznesu. Możesz definiować zasady zbierania znaczków, okresy promocyjne oraz personalizować nagrody,
-									aby lepiej odpowiadały oczekiwaniom Twoich klientów.
+									{t(
+										"Yes, our platform allows you to customize the loyalty program to the unique needs of your business. You can define stamp collection rules, promotional periods, and personalize rewards to better meet your customers' expectations."
+									)}
 								</p>
 							</main>
 						</article>
 						<article className='p-4 px-5 bg-lightGray247 rounded-xl'>
 							<header className='flex justify-between items-center gap-x-2'>
 								<h1 className='lg:text-xl text-lg text-dark28 font-semibold'>
-									Jakie są korzyści z programu lojalnościowego dla małych firm?
+									{t('What are the benefits of a loyalty program for small businesses?')}
 								</h1>
 								<FontAwesomeIcon className='h-5 text-dark28' icon={faCircleQuestion} />
 							</header>
 							<main>
 								<p className='mt-4 text-commonText text-md md:text-lg'>
-									Program lojalnościowy dla małych firm umożliwia budowanie trwałych relacji z klientami, pomaga w
-									zwiększeniu ich wartości i zachęca do częstszych zakupów. To narzędzie, które pomoże Ci zyskać
-									lojalność klientów.
+									{t(
+										"A loyalty program for small businesses enables building lasting relationships with customers, helps increase their value, and encourages more frequent purchases. It's a tool that will help you gain customer loyalty."
+									)}
 								</p>
 							</main>
 						</article>
 						<article className='p-4 px-5 bg-lightGray247 rounded-xl'>
 							<header className='flex justify-between items-center gap-x-2'>
 								<h1 className='lg:text-xl text-lg text-dark28 font-semibold'>
-									Czy program lojalnościowy pomaga w budowaniu marki?
+									{t('Does a loyalty program help in building a brand?')}
 								</h1>
 								<FontAwesomeIcon className='h-5 text-dark28' icon={faCircleQuestion} />
 							</header>
 							<main>
 								<p className='mt-4 text-commonText text-md md:text-lg'>
-									Tak, program lojalnościowy jest skutecznym narzędziem w budowaniu marki. Daje klientom dodatkowy
-									powód, aby pozostać wiernymi Twojej marce, jednocześnie zwiększając rozpoznawalność marki wśród
-									potencjalnych klientów.
+									{t(
+										'Yes, a loyalty program is an effective tool in building a brand. It gives customers an additional reason to remain loyal to your brand, while also increasing brand recognition among potential customers.'
+									)}
 								</p>
 							</main>
 						</article>
 						<article className='p-4 px-5 bg-lightGray247 rounded-xl'>
 							<header className='flex justify-between items-center gap-x-2'>
 								<h1 className='lg:text-xl text-lg text-dark28 font-semibold'>
-									Czy program lojalnościowy wpływa na zdobywanie nowych klientów?
+									{t('Does a loyalty program impact acquiring new customers?')}
 								</h1>
 								<FontAwesomeIcon className='h-5 text-dark28' icon={faCircleQuestion} />
 							</header>
 							<main>
 								<p className='mt-4 text-commonText text-md md:text-lg'>
-									Tak, program lojalnościowy nie tylko utrzymuje obecnych klientów, ale także przyciąga nowych. Klienci
-									są bardziej skłonni wybrać firmę, która oferuje atrakcyjne programy nagród, co przekłada się na
-									zdobywanie nowych klientów.
+									{t(
+										'Yes, a loyalty program not only retains existing customers but also attracts new ones. Customers are more likely to choose a company offering attractive reward programs, translating into acquiring new customers.'
+									)}
 								</p>
 							</main>
 						</article>
 						<article className='p-4 px-5 bg-lightGray247 rounded-xl'>
 							<header className='flex justify-between items-center gap-x-2'>
 								<h1 className='lg:text-xl text-lg text-dark28 font-semibold'>
-									Jakie są trendy w dziedzinie programów lojalnościowych?
+									{t('What are the trends in loyalty programs?')}
 								</h1>
 								<FontAwesomeIcon className='h-5 text-dark28' icon={faCircleQuestion} />
 							</header>
 							<main>
 								<p className='mt-4 text-commonText text-md md:text-lg'>
-									Obecnie trendy obejmują personalizację nagród, wykorzystanie technologii mobilnych, integrację z
-									mediami społecznościowymi oraz zrównoważone i społeczne aspekty programów lojalnościowych. Nasza
-									platforma jest na bieżąco z tymi trendami, aby sprostać oczekiwaniom rynku.
+									{t(
+										'Current trends include reward personalization, the use of mobile technologies, integration with social media, and sustainable and social aspects of loyalty programs. Our platform stays updated with these trends to meet market expectations.'
+									)}
 								</p>
 							</main>
 						</article>

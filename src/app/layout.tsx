@@ -6,6 +6,8 @@ import './../../styles/css/global.css';
 import '../data/i18n';
 import { useEffect } from 'react';
 import getCookie from '../helpers/GetCookie';
+import 'vanilla-cookieconsent/dist/cookieconsent.css';
+import CookieConsentComponent from '../components/cookie/CookieConsent';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -38,8 +40,11 @@ export default function RootLayout({
 	};
 
 	return (
-		<html lang={`${getCookie('langChoosed') === 'english' ? 'en' : 'pl'}`}>
-			<body className={inter.className}>{children}</body>
-		</html>
+		<>
+			<html lang={`${getCookie('langChoosed') === 'english' ? 'en' : 'pl'}`}>
+				<body className={inter.className}>{children}</body>
+			</html>
+			<CookieConsentComponent />
+		</>
 	);
 }

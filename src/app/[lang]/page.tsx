@@ -45,7 +45,8 @@ const Home: React.FC<params> = ({ params }) => {
 										</h1>
 										<p className='mt-7 md:text-xl text-lg lg:text-2xl'>
 											{t('Collect data, understand your customers, and reward them for loyalty. We create')}{' '}
-											<b className=' md:text-xl text-lg lg:text-2xl text-dark28'>{t('personalized loyalty cards')}</b>,&nbsp;
+											<b className=' md:text-xl text-lg lg:text-2xl text-dark28'>{t('personalized loyalty cards')}</b>
+											,&nbsp;
 											{t('which not only retain customers but also motivate them to make more frequent purchases.')}
 										</p>
 									</section>
@@ -74,21 +75,21 @@ const Home: React.FC<params> = ({ params }) => {
 										<FontAwesomeIcon className='h-10 text-dark28' icon={faUniversalAccess} />
 										<section>
 											<b className='text-xl font-semibold'>10x</b>
-											<h2 className='text-lg'>Wzrost retencji</h2>
+											<h2 className='text-lg'>{t('Increase in Retention')}</h2>
 										</section>
 									</div>
 									<div className='flex gap-x-6 h-28 items-center justify-center w-4/5 sm:w-3/5 xl:border-r-[1px] border-b-[1px] xl:border-b-[0px] border-lightGray226'>
 										<FontAwesomeIcon className='h-10 text-dark28' icon={faCartPlus} />
 										<section>
 											<b className='text-xl font-semibold'>50%</b>
-											<h2 className='text-lg'>Wzrost konwersji</h2>
+											<h2 className='text-lg'>{t('Increase in Conversion')}</h2>
 										</section>
 									</div>
 									<div className='flex gap-x-6 h-28 items-center justify-center xl:justify-end w-4/5 sm:w-3/5'>
 										<FontAwesomeIcon className='h-10 text-dark28' icon={faSmile} />
 										<section>
 											<b className='text-xl font-semibold'>99%</b>
-											<h2 className='text-lg'>Pozytywne opinie</h2>
+											<h2 className='text-lg'>{t('Positive Feedback')}</h2>
 										</section>
 									</div>
 								</div>
@@ -100,30 +101,32 @@ const Home: React.FC<params> = ({ params }) => {
 									/>
 									<section className='flex flex-col gap-y-4' ref={virtualBenefitsRef}>
 										<h1 className='xl:text-6xl text-4xl text-dark28 font-semibold xl:leading-[3.4rem]'>
-											Wirtualne pieczątki realne korzyści
+											{t('Virtual stamps, real benefits')}
 										</h1>
 										<p className='font-medium text-lg xl:text-xl text-commonText'>
-											Przy każdym zakupie zbieraj wirtualne pieczątki, które wymienisz na atrakcyjne nagrody. Im więcej
-											pieczątek, tym lepsze prezenty! Twój sklep, Twoje zasady, Twoje nagrody. Prosto i
-											satysfakcjonująco!
+											{t(
+												'With every purchase, collect virtual stamps that you can exchange for attractive rewards. The more stamps, the better the gifts! Your store, your rules, your rewards. Simple and satisfying!'
+											)}
 										</p>
 										<button className='flex items-center text-commonText font-medium mt-3'>
-											Zobacz jak to działa <FontAwesomeIcon icon={faArrowRight} className='h-4 ml-3 text-commonText' />
+											{t('See how it works')}{' '}
+											<FontAwesomeIcon icon={faArrowRight} className='h-4 ml-3 text-commonText' />
 										</button>
 									</section>
 								</div>
 								<div className='sm:h-screen sm:py-0 py-16 flex sm:flex-row flex-col-reverse items-center justify-center w-full xl:w-[70rem] gap-16 xl:gap-32'>
 									<section className='flex flex-col gap-y-4'>
 										<h1 className='xl:text-6xl text-4xl text-dark28 font-semibold xl:leading-[3.4rem]'>
-											Lojalność w Twoim telefonie
+											{t('Loyalty on your phone')}
 										</h1>
 										<p className='font-medium text-lg xl:text-xl text-commonText'>
-											Pobierz naszą aplikację mobilną, zbieraj punkty i wymieniaj na nagrody! Sprawdzaj swoje punkty,
-											odbieraj ekskluzywne oferty, i bądź na bieżąco z najnowszymi promocjami. Twoi klienci zasługują na
-											wygodę obsługi w zasięgu ręki!
+											{t(
+												'Download our mobile app, collect points, and redeem rewards! Check your points, receive exclusive offers, and stay up-to-date with the latest promotions. Your customers deserve convenient service at their fingertips!'
+											)}
 										</p>
 										<button className='flex items-center text-commonText font-medium mt-3'>
-											Zobacz jak to działa <FontAwesomeIcon icon={faArrowRight} className='h-4 ml-3 text-commonText' />
+											{t('See how it works')}{' '}
+											<FontAwesomeIcon icon={faArrowRight} className='h-4 ml-3 text-commonText' />
 										</button>
 									</section>
 									<img
@@ -140,56 +143,62 @@ const Home: React.FC<params> = ({ params }) => {
 									/>
 									<section className='flex flex-col gap-y-4'>
 										<h1 className='xl:text-6xl text-4xl text-dark28 font-semibold xl:leading-[3.4rem]'>
-											Trwałe relacje to skuteczny marketing
+											{t('Long-lasting relationships for effective marketing')}
 										</h1>
 										<p className='font-medium text-lg xl:text-xl text-commonText'>
-											Wykorzystaj potęgę naszej aplikacji do skutecznego marketingu. Wysyłaj spersonalizowane wiadomości
-											SMS, przyciągaj uwagę za pomocą powiadomień push. Buduj trwałe relacje z klientami, informuj ich o
-											promocjach i utrzymuj ich zaangażowanie w Twoją markę!
+											{t(
+												'Harness the power of our app for effective marketing. Send personalized SMS messages, grab attention with push notifications. Build lasting relationships with customers, inform them about promotions, and keep them engaged with your brand!'
+											)}
 										</p>
 										<button className='flex items-center text-commonText font-medium mt-3'>
-											Zobacz jak to działa <FontAwesomeIcon icon={faArrowRight} className='h-4 ml-3 text-commonText' />
+											{t('See how it works')}{' '}
+											<FontAwesomeIcon icon={faArrowRight} className='h-4 ml-3 text-commonText' />
 										</button>
 									</section>
 								</div>
 								<div className='flex justify-center flex-col'>
 									<h1 className='text-center text-4xl xl:text-6xl font-semibold text-dark28'>
-										Jakie korzyści przynosi aplikacja lojalnościowa Stamply?
+										{t('Why Stamply loyalty app?')}
 									</h1>
 									<div className='lg:grid flex flex-col grid-cols-2 items-center gap-8 w-full mt-12 md:mt-20'>
 										<section className='w-full xl:h-72 h-full flex flex-col gap-y-3 p-8 xl:p-12 bg-dark28 rounded-lg'>
-											<h1 className='xl:text-2xl text-xl text-white font-bold'>Pozyskaj klientów i zwiększ sprzedaż</h1>
+											<h1 className='xl:text-2xl text-xl text-white font-bold'>
+												{t('Acquire customers and increase sales')}
+											</h1>
 											<p className='xl:text-xl text-lg text-lightGray247'>
-												Nagradzaj klientów za każdy zakup i buduj z nimi trwałą relację. Nasz Program Lojalnościowy to
-												klucz do zwiększenia liczby powracających klientów i wzrostu obrotów w Twoim biznesie.
+												{t(
+													'Reward customers for every purchase and build a lasting relationship with them. Our loyalty program is the key to increasing repeat customers and business growth.'
+												)}
 											</p>
 										</section>
 										<section className='w-full xl:h-72 h-full flex flex-col gap-y-3 p-8 xl:p-12 bg-lightGray247 rounded-lg'>
 											<h1 className='xl:text-2xl text-xl text-dark28 font-semibold'>
-												Gotowe rozwiązania i nowości dla klientów
+												{t('Ready solutions and innovations for customers')}
 											</h1>
 											<p className='xl:text-xl text-lg text-commonText'>
-												Zapomnij o trudnościach w implementacji. Nasza platforma SaaS to kompleksowe rozwiązanie, które
-												obsłuży wszystko za Ciebie. Dodatkowo, regularnie wprowadzamy nowości, dbając o to, aby Twoi
-												klienci zawsze odkrywali coś świeżego. Uatrakcyjnij swoją ofertę, pozostawiając całą pracę nam!
+												{t(
+													'Forget implementation difficulties. Our SaaS platform is a comprehensive solution that handles everything for you. Additionally, we regularly introduce innovations, ensuring your customers always discover something fresh. Make your offer more attractive, leaving all the work to us!'
+												)}
 											</p>
 										</section>
 										<section className='w-full  xl:h-72 h-full flex flex-col gap-y-3 p-8 xl:p-12 bg-lightGray247 rounded-lg'>
-											<h1 className='xl:text-2xl text-xl text-dark28 font-semibold'>Buduj relację z klientami</h1>
+											<h1 className='xl:text-2xl text-xl text-dark28 font-semibold'>
+												{t('Build customer relationships')}
+											</h1>
 											<p className='xl:text-xl text-lg text-commonText'>
-												Nasza platforma umożliwia efektywny marketing, wykorzystując powiadomienia Push, SMS oraz
-												e-mail. Bądź blisko swoich klientów, informując ich o najnowszych promocjach, ekskluzywnych
-												ofertach i wydarzeniach. Skuteczny marketing to klucz do utrzymania ich uwagi i lojalności.
+												{t(
+													'Our platform enables effective marketing using push notifications, SMS, and email. Stay close to your customers, informing them about the latest promotions, exclusive offers, and events. Effective marketing is the key to maintaining their attention and loyalty.'
+												)}
 											</p>
 										</section>
 										<section className='w-full xl:h-72 h-full flex flex-col gap-y-3 p-8 xl:p-12 bg-lightGray247 rounded-lg'>
 											<h1 className='xl:text-2xl text-xl text-dark28 font-semibold'>
-												Dane i analizy dla rozwoju biznesu
+												{t('Data and analytics for business growth')}
 											</h1>
 											<p className='xl:text-xl text-lg text-commonText'>
-												Dostęp do danych i analiz pozwoli Ci lepiej zrozumieć potrzeby Twoich klientów, personalizować
-												oferty i podejmować strategiczne decyzje biznesowe. Odkryj nowe możliwości dzięki naszym
-												narzędziom analitycznym.
+												{t(
+													"Access to data and analytics will help you better understand your customers' needs, personalize offers, and make strategic business decisions. Discover new possibilities with our analytical tools."
+												)}
 											</p>
 										</section>
 									</div>
@@ -203,9 +212,11 @@ const Home: React.FC<params> = ({ params }) => {
 										d='M0,256L48,229.3C96,203,192,149,288,138.7C384,128,480,160,576,192C672,224,768,256,864,245.3C960,235,1056,181,1152,133.3C1248,85,1344,43,1392,21.3L1440,0L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z'></path>
 								</svg>
 								<section className='h-[30rem] flex flex-col items-center mt-24 relative px-3'>
-									<h1 className='text-center text-4xl xl:text-6xl text-white font-semibold'>Sprawdź, jak to działa</h1>
+									<h1 className='text-center text-4xl xl:text-6xl text-white font-semibold'>
+										{t('Check how it works')}
+									</h1>
 									<span className='text-center text-md xl:text-lg text-white mt-3 xl:mt-6'>
-										Obejrzyj ten krótki film, aby zobaczyć, jak działa aplikacja Stamply
+										{t('Watch this short video to see how Stamply application works')}
 									</span>
 									<div className='sm:w-[620px] sm:h-full h-3/5 w-11/12 sm:mt-10 mt-6'>
 										<iframe
@@ -223,7 +234,7 @@ const Home: React.FC<params> = ({ params }) => {
 							</div>
 							<div className='mt-16 w-11/12 xl:w-[80rem]'>
 								<h1 className='xl:text-6xl text-4xl font-semibold text-dark28 text-center'>
-									Dla kogo jest ta aplikacja?
+									{t('Who is this app for?')}
 								</h1>
 								<div
 									className='lg:grid flex flex-col-reverse items-center gap-x-20 gap-y-10 justify-between w-full mt-10 sm:mt-20'
@@ -231,12 +242,11 @@ const Home: React.FC<params> = ({ params }) => {
 										gridTemplateColumns: '1.4fr 1fr',
 									}}>
 									<section className='flex lg:text-right flex-col justify-center gap-4'>
-										<h3 className='text-2xl text-dark28 font-semibold'>Kawiarnie</h3>
+										<h3 className='text-2xl text-dark28 font-semibold'>{t('Cafes')}</h3>
 										<p className='lg:text-xl text-lg text-commonText'>
-											Wybij się na tle konkurencji. Nasza aplikacja umożliwia łatwe nagradzanie klientów za każde
-											zamówienie, co zwiększa retencję i zachęca do częstszych odwiedzin. Wykorzystaj możliwości
-											personalizacji i promuj swoje najpopularniejsze napoje lub przekąski jako nagrody, co skutecznie
-											przyciągnie uwagę potencjalnych klientów.
+											{t(
+												'Stand out from the competition. Our application allows easy rewarding of customers for every order, increasing retention and encouraging more frequent visits. Utilize customization options and promote your most popular drinks or snacks as rewards, effectively attracting the attention of potential customers.'
+											)}
 										</p>
 									</section>
 									<img
@@ -256,12 +266,11 @@ const Home: React.FC<params> = ({ params }) => {
 										className='rounded-xl w-11/12 md:min-w-[30rem] md:max-w-[30rem] md:max-h-[20rem] md:min-h-[20rem]'
 									/>
 									<section className='flex text-left flex-col justify-center gap-4'>
-										<h3 className='text-2xl text-dark28 font-semibold'>Lodziarnie</h3>
+										<h3 className='text-2xl text-dark28 font-semibold'>{t('Ice cream shops')}</h3>
 										<p className='lg:text-xl text-lg text-commonText'>
-											Otwórz nowe możliwości dla swojej lodziarni dzięki programowi lojalnościowemu Stamply. Dzięki
-											Stamply możesz promować swoje sezonowe smaki, nowe produkty lub specjalne promocje, co przyciągnie
-											uwagę klientów i zwiększy sprzedaż. Wykorzystaj potencjał programu lojalnościowego, aby budować
-											lojalność marki i rozwijać swoją lodziarnię.
+											{t(
+												'Open up new possibilities for your ice cream parlor with the Stamply loyalty program. With Stamply, you can promote your seasonal flavors, new products, or special promotions, attracting the attention of customers and increasing sales. Harness the potential of the loyalty program to build brand loyalty and grow your ice cream parlor.'
+											)}
 										</p>
 									</section>
 								</div>
@@ -271,12 +280,11 @@ const Home: React.FC<params> = ({ params }) => {
 										gridTemplateColumns: '1.4fr 1fr',
 									}}>
 									<section className='flex lg:text-right flex-col justify-center gap-4'>
-										<h3 className='text-2xl text-dark28 font-semibold'>Sklepy</h3>
+										<h3 className='text-2xl text-dark28 font-semibold'>{t('Stores')}</h3>
 										<p className='lg:text-xl text-lg text-commonText'>
-											Zwiększaj sprzedaż i buduj lojalność klientów dzięki programowi lojalnościowemu Stamply dla
-											Twojego sklepu. Nasza aplikacja umożliwia nagradzanie klientów za każdy zakup, co skutecznie
-											zwiększa częstotliwość wizyt i wartość koszyka. Wykorzystaj możliwości personalizacji i promuj
-											swoje najlepsze produkty jako nagrody, co przyciągnie uwagę klientów i zmotywuje ich do zakupów.
+											{t(
+												'Increase sales and build customer loyalty with the Stamply loyalty program for your store. Our application enables rewarding customers for every purchase, effectively increasing visit frequency and basket value. Utilize customization options and promote your best products as rewards, attracting the attention of customers and motivating them to make purchases.'
+											)}
 										</p>
 									</section>
 									<img
@@ -296,13 +304,8 @@ const Home: React.FC<params> = ({ params }) => {
 										className='rounded-xl w-11/12 md:min-w-[30rem] md:max-w-[30rem] md:max-h-[20rem] md:min-h-[20rem]'
 									/>
 									<section className='flex text-left flex-col justify-center gap-4'>
-										<h3 className='text-2xl text-dark28 font-semibold'>Usługi</h3>
-										<p className='lg:text-xl text-lg text-commonText'>
-											Pozyskuj nowych klientów i zwiększaj lojalność istniejących dzięki programowi lojalnościowemu
-											Stamply. Nasza aplikacja umożliwia nagradzanie klientów za korzystanie z Twoich usług, co
-											skutecznie buduje relacje i zachęca do powrotu. Dzięki Stamply zbudujesz silną markę i zwiększysz
-											zaangażowanie klientów, co przełoży się na wzrost sprzedaży i sukces Twojego biznesu.
-										</p>
+										<h3 className='text-2xl text-dark28 font-semibold'>{t('Services')}</h3>
+										<p className='lg:text-xl text-lg text-commonText'>{t('Acquire new customers and increase loyalty among existing ones with the Stamply loyalty program. Our application enables rewarding customers for using your services, effectively building relationships and encouraging return visits. With Stamply, you\'ll build a strong brand and increase customer engagement, translating into sales growth and success for your business.')}</p>
 									</section>
 								</div>
 							</div>

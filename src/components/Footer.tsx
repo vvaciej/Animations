@@ -1,10 +1,13 @@
-import Link from "next/link";
+import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
-import getCookie from "../helpers/GetCookie";
+import getCookie from '../helpers/GetCookie';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
-  return (
+	const { t } = useTranslation();
+
+	return (
 		<footer className='mt-32 w-full'>
 			<div className='w-full'>
 				<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320' className='w-full rotate-180'>
@@ -24,7 +27,7 @@ const Footer = () => {
 								</Link>
 								<h2 className='text-lg font-semibold text-dark28'>Collect. Reedem. Repeat.</h2>
 								<div className='mt-7'>
-									<span className='font-medium text-dark28'>Dołącz do nas</span>
+									<span className='font-medium text-dark28'>{t('Join to us')}</span>
 									<section className='flex gap-x-3 mt-2'>
 										<button
 											className='p-2 bg-white flex items-center justify-center rounded-3xl hover:bg-red transition-all'
@@ -45,27 +48,29 @@ const Footer = () => {
 							</section>
 							<nav className='flex justify-between sm:flex-row flex-col gap-8 md:w-1/2'>
 								<section>
-									<h2 className='text-lg'>Produkt</h2>
+									<h2 className='text-lg'>{t('Product')}</h2>
 									<ul className='mt-4 text-commonText flex flex-col gap-2'>
 										<li className='hover:text-red'>
-											<Link href={`/${getCookie('langChoosed') === 'english' ? 'en' : 'pl'}`}>Produkt</Link>
+											<Link href={`/${getCookie('langChoosed') === 'english' ? 'en' : 'pl'}`}>{t('Product')}</Link>
 										</li>
 										<li className='hover:text-red'>
-											<Link href={`/${getCookie('langChoosed') === 'english' ? 'en' : 'pl'}/pricing`}>Cennik</Link>
+											<Link href={`/${getCookie('langChoosed') === 'english' ? 'en' : 'pl'}/pricing`}>
+												{t('Pricing')}
+											</Link>
 										</li>
 										<li className='hover:text-red'>
 											<Link href={`/${getCookie('langChoosed') === 'english' ? 'en' : 'pl'}/features`}>
-												Funkcjonalność
+												{t('Features')}
 											</Link>
 										</li>
 										<li className='hover:text-red'>
 											<Link href={`/${getCookie('langChoosed') === 'english' ? 'en' : 'pl'}/app`}>
-												Pobierz aplikację
+												{t('Download the app')}
 											</Link>
 										</li>
 									</ul>
 									<h2 className='text-commonText sm:mt-10 mt-2'>
-										Original website:{' '}
+										{t('Original website')}:{' '}
 										<a
 											href='https://www.stamply.pl'
 											target='_blank'
@@ -76,22 +81,26 @@ const Footer = () => {
 									</h2>
 								</section>
 								<section>
-									<h2 className='text-lg'>Platforma</h2>
+									<h2 className='text-lg'>{t('Platform')}</h2>
 									<ul className='mt-4 text-commonText flex flex-col gap-2'>
 										<li className='hover:text-red'>
-											<Link href={`/${getCookie('langChoosed') === 'english' ? 'en' : 'pl'}/aboutus`}>O nas</Link>
+											<Link href={`/${getCookie('langChoosed') === 'english' ? 'en' : 'pl'}/aboutus`}>
+												{t('About us')}
+											</Link>
 										</li>
 										<li className='hover:text-red'>
-											<Link href={`/${getCookie('langChoosed') === 'english' ? 'en' : 'pl'}/contact`}>Kontakt</Link>
+											<Link href={`/${getCookie('langChoosed') === 'english' ? 'en' : 'pl'}/contact`}>
+												{t('Contact')}
+											</Link>
 										</li>
 										<li className='hover:text-red'>
 											<Link href={`/${getCookie('langChoosed') === 'english' ? 'en' : 'pl'}/terms-and-conditions`}>
-												Regulamin
+												{t('Terms and conditions')}
 											</Link>
 										</li>
 										<li className='hover:text-red'>
 											<Link href={`/${getCookie('langChoosed') === 'english' ? 'en' : 'pl'}/privacy-policy`}>
-												Polityka prywatności
+												{t('Privacy policy')}
 											</Link>
 										</li>
 									</ul>
@@ -103,6 +112,6 @@ const Footer = () => {
 			</div>
 		</footer>
 	);
-}
+};
 
 export default Footer;

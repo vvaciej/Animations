@@ -1,10 +1,15 @@
+'use client';
+
 import Footer from '@/src/components/Footer';
 import Navbar from '@/src/components/Navbar';
 import { faMedal, faQrcode, faRocket, faUserPlus } from '@fortawesome/free-solid-svg-icons';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons/faArrowUp';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useTranslation } from 'react-i18next';
 
 const Features = () => {
+	const { t } = useTranslation();
+
 	return (
 		<div>
 			<Navbar />
@@ -13,10 +18,11 @@ const Features = () => {
 				style={{
 					margin: '0 auto',
 				}}>
-				<h1 className='xl:text-6xl text-5xl font-semibold text-dark28 text-center'>Jak to działa?</h1>
+				<h1 className='xl:text-6xl text-5xl font-semibold text-dark28 text-center'>{t('How Does it Work?')}</h1>
 				<p className='text-center mt-7 text-md xl:text-lg text-commonText max-w-[40rem]'>
-					Odkryj, jak możesz skutecznie wzmacniać relacje z klientami, zwiększać sprzedaż i wyróżniać się na rynku
-					dzięki aplikacji Stamply.
+					{t(
+						'Discover how you can effectively strengthen customer relationships, increase sales, and stand out in the market with the Stamply app.'
+					)}
 				</p>
 				<div className='mt-12 relative max-w-[65rem] pt-6 md:px-0 sm:pl-2 pl-4'>
 					<div className='after:h-full after:absolute after:w-1 after:bg-red md:after:right-1/2 md:after:transform-x-1/2 flex flex-col w-full h-full gap-x-28 gap-y-6'>
@@ -26,10 +32,13 @@ const Features = () => {
 								<FontAwesomeIcon className='h-7 text-red' icon={faRocket}></FontAwesomeIcon>
 							</div>
 							<section className='md:w-1/2 md:float-right xl:pl-16 pl-12'>
-								<h2 className='font-semibold text-dark28 xl:text-2xl text-xl mb-4'>Rejestracja i konfiguracja</h2>
+								<h2 className='font-semibold text-dark28 xl:text-2xl text-xl mb-4'>
+									{t('Registration and Configuration')}
+								</h2>
 								<p className='text-commonText text-lg xl:text-xl'>
-									Zarejestruj swój biznes w kilku prostych krokach. Dostęp do intuicyjnego panelu administracyjnego
-									umożliwi łatwą konfigurację i personalizację programu lojalnościowego.
+									{t(
+										'Register your business in a few simple steps. Access the intuitive administrative panel for easy configuration and personalization of the loyalty program.'
+									)}
 								</p>
 							</section>
 						</div>
@@ -38,10 +47,11 @@ const Features = () => {
 								<FontAwesomeIcon className='h-7 text-red' icon={faQrcode}></FontAwesomeIcon>
 							</div>
 							<section className='md:text-right md:w-1/2 xl:pr-16 md:pr-12 md:pl-0 pl-12'>
-								<h2 className='font-semibold text-dark28 xl:text-2xl text-xl mb-4'>Otrzymaj naklejki</h2>
+								<h2 className='font-semibold text-dark28 xl:text-2xl text-xl mb-4'>{t('Receive Stickers')}</h2>
 								<p className='text-commonText text-lg xl:text-xl'>
-									Otrzymaj spersonalizowane naklejki z unikalnymi kodami QR. Wystarczy je umieścić w swoim lokalu, by
-									klienci mogli łatwo zainstalować aplikację i zacząć zbierać punkty.
+									{t(
+										'Receive personalized stickers with unique QR codes. Simply place them in your establishment so customers can easily install the app and start collecting points.'
+									)}
 								</p>
 							</section>
 						</div>
@@ -51,10 +61,13 @@ const Features = () => {
 								<FontAwesomeIcon className='h-6 text-red' icon={faUserPlus}></FontAwesomeIcon>
 							</div>
 							<section className='md:w-1/2 md:float-right xl:pl-16 pl-12'>
-								<h2 className='font-semibold text-dark28 xl:text-2xl text-xl mb-4'>Łatwa rejestracja klienta</h2>
+								<h2 className='font-semibold text-dark28 xl:text-2xl text-xl mb-4'>
+									{t('Easy Customer Registration')}
+								</h2>
 								<p className='text-commonText text-lg xl:text-xl'>
-									Twoi klienci dokonują szybkiej rejestracji w zaledwie jednym kroku. Każdy zakup to nowe punkty, które
-									mogą wymieniać na atrakcyjne nagrody.
+									{t(
+										'Your customers complete a quick registration in just one step. Every purchase means new points that they can exchange for attractive rewards.'
+									)}
 								</p>
 							</section>
 						</div>
@@ -64,10 +77,11 @@ const Features = () => {
 								<FontAwesomeIcon className='h-6 text-red' icon={faMedal}></FontAwesomeIcon>
 							</div>
 							<section className='md:text-right md:w-1/2 xl:pr-16 md:pr-12 md:pl-0 pl-12'>
-								<h2 className='font-semibold text-dark28 xl:text-2xl text-xl mb-4'>Zbieraj punkty i wymieniaj</h2>
+								<h2 className='font-semibold text-dark28 xl:text-2xl text-xl mb-4'>{t('Collect Points and Redeem')}</h2>
 								<p className='text-commonText text-lg xl:text-xl'>
-									Klienci korzystają z aplikacji, skanując kody QR i gromadząc punkty, które później wymieniają na
-									atrakcyjne nagrody.
+									{t(
+										'Customers use the app, scan QR codes, and accumulate points, which they can later exchange for attractive rewards.'
+									)}
 								</p>
 							</section>
 						</div>
@@ -77,10 +91,11 @@ const Features = () => {
 								<FontAwesomeIcon className='h-6 text-red' icon={faArrowUp}></FontAwesomeIcon>
 							</div>
 							<section className='md:w-1/2 md:float-right xl:pl-16 pl-12'>
-								<h2 className='font-semibold text-dark28 xl:text-2xl text-xl mb-4'>Analizy i marketing</h2>
+								<h2 className='font-semibold text-dark28 xl:text-2xl text-xl mb-4'>{t('Analytics and Marketing')}</h2>
 								<p className='text-commonText text-lg xl:text-xl'>
-									Otrzymuj raporty i analizy, które pomagają zrozumieć preferencje klientów. Wykorzystuj zdobyte dane do
-									skutecznych działań marketingowych i powiadomień, zwiększając zaangażowanie klientów.
+									{t(
+										'Receive reports and analytics that help understand customer preferences. Use the acquired data for effective marketing actions and notifications, increasing customer engagement.'
+									)}
 								</p>
 							</section>
 						</div>
