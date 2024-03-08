@@ -14,7 +14,7 @@ const Features = () => {
 		<div>
 			<Navbar />
 			<main
-				className='min-h-screen pt-32 flex items-center flex-col xl:w-full w-11/12'
+				className='min-h-screen lg:pt-32 pt-24 flex items-center flex-col xl:w-full w-11/12'
 				style={{
 					margin: '0 auto',
 				}}>

@@ -12,7 +12,7 @@ const FAQ = () => {
 	return (
 		<div>
 			<Navbar />
-			<main className='min-h-screen pt-32 flex items-center flex-col'>
+			<main className='min-h-screen lg:pt-32 pt-24 flex items-center flex-col'>
 				<h1 className='md:text-6xl text-5xl font-semibold text-dark28 text-center'>FAQ</h1>
 				<p className='text-center mt-7 text-md md:text-lg text-commonText max-w-[40rem] px-4'>
 					{t(

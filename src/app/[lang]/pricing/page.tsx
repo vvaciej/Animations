@@ -12,7 +12,7 @@ const Pricing = () => {
 	return (
 		<div>
 			<Navbar />
-			<main className='min-h-screen pt-32 flex items-center flex-col'>
+			<main className='min-h-screen lg:pt-32 pt-24 flex items-center flex-col'>
 				<h1 className='lg:text-6xl sm:text-5xl text-3xl font-semibold text-dark28 text-center px-4'>
 					{t('Find the perfect plan for')}
 					<br /> {t('your business')}
