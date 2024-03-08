@@ -41,7 +41,7 @@ export default function RootLayout({
 
 	return (
 		<>
-			<html lang={`${getCookie('langChoosed') === 'english' ? 'en' : 'pl'}`}>
+			<html lang={`${getCookie('langChoosed') === 'english' ? 'en' : 'pl'} light`}>
 				<body className={inter.className}>{children}</body>
 			</html>
 			<CookieConsentComponent />
