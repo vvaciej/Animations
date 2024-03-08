@@ -41,7 +41,21 @@ export default function RootLayout({
 
 	return (
 		<>
-			<html lang={`${getCookie('langChoosed') === "english" ? 'en' : 'pl'}`} className='light h-max relative'>
+			<html lang={`${getCookie('langChoosed') === 'english' ? 'en' : 'pl'}`} className='light h-max relative'>
+				<head>
+					<link rel='icon' href='/next.svg' />
+					<meta name='theme-color' content='#E81948' />
+					<meta property='og:title' content='Program lojalnościowy | vvaciej' />
+					<meta property='og:image' content='/next.svg' />
+					<meta
+						name='description'
+						content=''
+					/>
+					<meta
+						name='keywords'
+						content=''
+					/>
+				</head>
 				<body className={inter.className}>{children}</body>
 			</html>
 			<CookieConsentComponent />
